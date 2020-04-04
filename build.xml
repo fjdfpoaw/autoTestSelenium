@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+<project default="build"  name="111">
+    <target name="clean">
+        <delete dir="target/classes"/>     
+    </target>
+    <target name="build" depends="clean" >
+          <mkdir dir="target/classes"/>  
+  		 <javac encoding="UTF8" destdir="target/classes">
+            <src path="src/main/java"/>
+        </javac> 
+    </target> 
+</project>-->
+
+
+<project name="javaTest" default="compile" >
+
+<target name="clean">
+<delete dir=".\src\main\java\build"/>
+</target>
+<target name="compile" depends="clean">
+<mkdir dir=".\src\main\java\build/classes"/>
+<javac srcdir="./" destdir=".\src\main\java\build/classes"/>
+</target>
+</project>
